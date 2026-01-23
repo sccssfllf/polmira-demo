@@ -60,6 +60,10 @@ p {
     margin-bottom: 1.5rem;
 }
 
+li {
+    color: var(--text-muted);
+}
+
 a {
     text-decoration: none;
     transition: all 0.3s ease;
