@@ -630,3 +630,66 @@ section {
         height: 300px;
     }
 }
+
+/* --- MODAL STYLES --- */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    margin: 15% auto;
+    padding: 40px;
+    border: 1px solid var(--accent-color);
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#modalProductName {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-left: none;
+    padding-left: 0;
+}
+
+#modalProductDescription {
+    font-size: 1rem;
+    line-height: 1.7;
+}

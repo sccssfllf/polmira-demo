@@ -93,7 +93,10 @@
                 <div class="container">
                     <h2>Наша Продукція</h2>
                     <div class="products-grid">
-                        <article class="product-card">
+                        <article class="product-card" 
+                            data-name="Ламінат" 
+                            data-description="Наш ламінат — це ідеальне поєднання ціни та якості. Він стійкий до подряпин, легко чиститься та доступний у широкому асортименті декорів, що імітують натуральне дерево." 
+                            data-image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.laminaatpark.nl%2Fwp-content%2Fuploads%2F2023%2F01%2F5031022219_floorlife_s77122_110e3fa9-1.jpg&f=1&nofb=1&ipt=4ada9af041c9fb5543efe5f106268519d18989406a46ea20d3e649c27d612907">
                             <div class="card-image">
                                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.laminaatpark.nl%2Fwp-content%2Fuploads%2F2023%2F01%2F5031022219_floorlife_s77122_110e3fa9-1.jpg&f=1&nofb=1&ipt=4ada9af041c9fb5543efe5f106268519d18989406a46ea20d3e649c27d612907"
                                     alt="Ламінатна підлога">
@@ -103,7 +106,10 @@
                                 <p class="card-desc">Ідеальне поєднання ціни та якості для будь-якого приміщення.</p>
                             </div>
                         </article>
-                        <article class="product-card">
+                        <article class="product-card" 
+                            data-name="Паркетна дошка" 
+                            data-description="Класична паркетна дошка з натурального дерева додасть вашій оселі тепла та затишку. Це екологічне та довговічне рішення, яке ніколи не виходить з моди." 
+                            data-image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjnc-negoce.com%2Fwp-content%2Fuploads%2F2024%2F02%2Fparquet-baton-rompu-naturel.webp&f=1&nofb=1&ipt=8b708f78ed4e2fe694d4ffc1cf214e037ad76e2d5e003fc16ded6cc0e38fa699">
                             <div class="card-image">
                                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjnc-negoce.com%2Fwp-content%2Fuploads%2F2024%2F02%2Fparquet-baton-rompu-naturel.webp&f=1&nofb=1&ipt=8b708f78ed4e2fe694d4ffc1cf214e037ad76e2d5e003fc16ded6cc0e38fa699"
                                     alt="Паркетна підлога">
@@ -113,7 +119,10 @@
                                 <p class="card-desc">Класичне рішення, що додає тепла та затишку вашій оселі.</p>
                             </div>
                         </article>
-                        <article class="product-card">
+                        <article class="product-card" 
+                            data-name="Вінілова підлога" 
+                            data-description="Вінілова підлога — це надзвичайно стійке та 100% водонепроникне покриття. Ідеально підходить для кухонь, ванних кімнат та комерційних приміщень з високою прохідністю." 
+                            data-image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.prom.ua%2F4333051649_vinilova-pidloga-invictus.jpg&f=1&nofb=1&ipt=836ed5717ddfdc4c46bc50c1ddee58275fafa589d9acad82a0323e54fb608c96">
                             <div class="card-image">
                                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.prom.ua%2F4333051649_vinilova-pidloga-invictus.jpg&f=1&nofb=1&ipt=836ed5717ddfdc4c46bc50c1ddee58275fafa589d9acad82a0323e54fb608c96"
                                     alt="Вінілова підлога">
@@ -223,7 +232,8 @@
                     <h2>Зв'яжіться з нами</h2>
                     <p>Готові обговорити ваш проєкт? Зателефонуйте нам або напишіть на пошту.</p>
                     <ul>
-                        <li>Телефон: <a href="tel:+380000000000">+38 (000) 000-00-00</a></li>
+                        <li
+                        >Телефон: <a href="tel:+380000000000">+38 (000) 000-00-00</a></li>
                         <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
                     </ul>
                 </div>
@@ -236,6 +246,16 @@
             <p>&copy; 2025 Полмира. Всі права захищено.</p>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="" alt="Product Image" class="modal-image">
+            <h2 id="modalProductName"></h2>
+            <p id="modalProductDescription"></p>
+        </div>
+    </div>
 
 </body>
 
