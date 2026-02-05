@@ -491,13 +491,114 @@ section {
     transform: scale(1.02);
 }
 
-/* --- FOOTER --- */
+/* --- FOOTER REDESIGN --- */
 .footer {
-    padding: 50px 0;
+    background-color: #050505; /* Keeps your luxury dark theme */
+    padding: 60px 0 30px 0;
     text-align: center;
-    font-size: 0.8rem;
+    border-top: 1px solid #1a1a1a;
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+/* Info Block */
+.footer-info p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.footer-info strong {
+    color: #fff; /* White labels */
+    font-weight: 400;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-info a:hover {
+    color: var(--accent-color); /* Gold hover */
+}
+
+/* Icons Section */
+.footer-icons {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    border-radius: 50%; /* Circle shape */
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the two logos */
+    margin-top: 10px;
+    opacity: 0.9; /* Slight transparency for luxury feel */
+}
+
+.payment-icon {
+    height: 30px; /* Fixed height ensures they match */
+    width: auto;  /* Width adjusts automatically */
+    object-fit: contain;
+    display: block;
+    background-color: #fff; /* White background behind logo */
+    padding: 2px 5px; /* Tiny padding so logo doesn't touch edges */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Divider Line */
+.footer-divider {
+    height: 1px;
+    background-color: #1a1a1a;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 30px auto;
+}
+
+.copyright-text {
+    font-size: 0.85rem;
     color: #666;
-    background-color: var(--bg-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Mobile Tweak */
+@media screen and (max-width: 480px) {
+    .mobile-break { display: block; } /* Break address on small phones */
 }
 
 /* ---  MOBILE RESPONSIVE (Max-width 968px) --- */

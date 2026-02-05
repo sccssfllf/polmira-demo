@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('Script loaded'); // for debugging
 
+    const yearSpan = document.getElementById('year');
     const burger = document.querySelector('.burger-menu');
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav a'); // Знаходимо всі посилання в навігації
@@ -80,4 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // Footer actual year
+    if(yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
